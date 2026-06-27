@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding:30px;
+}
+.box{
+    margin-top: 50px;
+    height: 300px;
+    width: 400px;
+    background: #badff4;
+}
+.circle{
+    margin-top: 50px;
+    height: 300px;
+    width:300px;
+    background: #badff4;
+    border-radius: 50%;
+}
