@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::selection{
+  background: #c6e38d;
+  color:black ;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.app {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: whitesmoke;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  white-space: nowrap;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 9rem;
+  line-height:7rem;
+  overflow: hidden;
+}
+.nameChars{
+  overflow: hidden;
+}
+.boxx{
+  height: 200px;
+  width: 200px;
+  background: transparent;
+  border: 0.1px solid rgba(255, 255, 255, 0.434);
+  border-radius: 50%;
+}
