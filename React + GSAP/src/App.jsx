@@ -92,7 +92,7 @@ const App = () => {
         x: 500,
         ease: "power2.inOut",
         delay: 1,
-        duration: 0.4,
+        stagger: 0.1,
       });
     },
     { scope: containerRef.current, dependencies: [], revertOnUpdate: true },
