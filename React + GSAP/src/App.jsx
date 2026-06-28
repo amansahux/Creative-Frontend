@@ -81,11 +81,12 @@ import React from "react";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Animate from "./components/Animate";
 
 const App = () => {
   const boxRef = useRef(null);
   const containerRef = useRef(null)
-  const {contextSafe} = useGSAP(() => {
+   useGSAP(() => {
     gsap.to(boxRef.current, {
       x: 500,
       ease: "power2.inOut",
@@ -94,15 +95,11 @@ const App = () => {
     });
   },{scope: containerRef.current, dependencies:[], revertOnUpdate:true});
   return (
-    <div ref={containerRef}>
-      <div ref={boxRef} className="box"></div>
-      <button onClick={contextSafe(() => {
-        gsap.to(boxRef.current,{
-          x:0,
-        } )
-      }
-      )}>Click ME</button>
-    </div>
+   <div>
+    <Animate>
+   <div className="box"></div>
+    </Animate>
+   </div>
   );
 };
 
